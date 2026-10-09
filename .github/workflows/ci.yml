@@ -1,4 +1,3 @@
-  GNU nano 9.2                          .github/workflows/ci.yml
 name: TP GitHub Actions CI/CD
 
 on:
