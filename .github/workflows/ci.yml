@@ -1,0 +1,25 @@
+  GNU nano 9.2                          .github/workflows/ci.yml
+name: TP GitHub Actions CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build_job:
+    runs-on: windows-latest
+    steps:
+      - name: Construction du projet
+        run: |
+          echo "Construction du projet..."
+          echo "Build termine avec succes !"
+
+  test_job:
+    needs: build_job
+    runs-on: windows-latest
+    steps:
+      - name: Execution des tests
+        run: |
+
